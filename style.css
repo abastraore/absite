@@ -4,21 +4,22 @@ body {
 }
 
 .display {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
-  background-color: #9ea167;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #9ea167;
 }
 
 .salutation {
-   font-family: 'Great Vibes', cursive;
-  font-size: 60px;
-  color: #061b1d;
-  margin: 0;
-  text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 60px;
+    color: #061b1d;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
 }
 
 .salutation1 {
@@ -30,14 +31,14 @@ body {
 }
 
 .logo {
- width: 50%;
-  border-radius: 50%;
-  display: block;
+    font-size:50%;
+    border-radius: 50%;
+    display: block;
 }
 
 .trait {
-  font-size: 60px;
-  margin-top: 0;
+    font-size: 60px;
+    margin-top: 0;
 }
 
 .affichage {
@@ -99,7 +100,9 @@ body {
     margin-bottom: 20px;
 }
 
-.effet, .effett, .effetz {
+.effet,
+.effett,
+.effetz {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
@@ -109,10 +112,12 @@ body {
     color: rgba(6, 27, 29, 0.815);
     font-size: 35px;
 }
+
 .effett {
     color: #462727;
     font-size: 20px;
 }
+
 .effetz {
     color: #b31e63;
     font-size: 25px;
@@ -122,6 +127,7 @@ body {
 .effet:hover {
     color: blue;
 }
+
 .effetz:hover {
     color: aquamarine;
 }
@@ -176,40 +182,42 @@ body {
 
 @media (max-width: 768px) {
 
-  .display {
-    flex-direction: column;
-  }
+    .display {
+        flex-direction: column;
+    }
 
- .salutation {
-    font-size: 40px;
-    text-align: center;
-    width: 100%;
-  }
-  .salutation1 {
-      font-size: 35px;
-  }
+    .salutation {
+        font-size: 40px;
+        text-align: center;
+        width: 100%;
+    }
 
-  .logo {
-    max-width: 50%;
-    border-radius: 50%;
-  }
+    .salutation1 {
+        font-size: 35px;
+    }
 
-  .affichage li {
-    flex: 0 0 100%;
-  }
+    .logo {
+        max-width: 50%;
+        border-radius: 50%;
+    }
 
-   .displayz {
-    flex-direction: column;
-    gap: 10px;
-  }
+    .affichage li {
+        flex: 0 0 100%;
+    }
 
-  .form1 {
-      flex-direction: column;
-      align-items: stretch;
-  }
-   .trait {
-    font-size: 30px;
-    margin-top: -20px;
-  }
+    .displayz {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form1 {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .trait {
+        font-size: 30px;
+        margin-top: -20px;
+    }
 
 }
