@@ -14,7 +14,6 @@ body {
     font-family: 'Great Vibes', cursive;
     font-size: 80px;
     color: rgba(6, 27, 29, 0.815);
-    margin-top: 20px;
     text-align: center;
     justify-items: left;
 }
@@ -28,9 +27,8 @@ body {
 }
 
 .logo {
-  width: 100%;
+  width: 90%;
   float: left;
-  max-width: 150px;
   height: auto;
   border-radius: 50%; 
   margin: 0 auto;
