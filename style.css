@@ -28,10 +28,11 @@ body {
 
 .logo {
   width: 100%;
+  float: left;
   max-width: 150px;
   height: auto;
   border-radius: 50%; 
-  display: block;
+  display:inline;
   margin: 0 auto;
 }
 
