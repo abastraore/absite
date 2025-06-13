@@ -171,11 +171,6 @@ body {
 
 @media (max-width: 768px) {
 
-  #display {
-      flex-direction: column;
-      gap: 30px;
-  }
-
   .salutation {
       font-size: 60px;
       text-align: center;
