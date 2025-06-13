@@ -3,7 +3,7 @@ body {
     background-color: rgb(158, 161, 103);
 }
 
-#display {
+.display {
   display:flex;
   gap: 10px;
   flex-wrap: wrap;
@@ -175,7 +175,7 @@ body {
 
 @media (max-width: 768px) {
 
-  #display {
+  .display {
     flex-direction: column;
     gap: 20px;
   }
