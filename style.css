@@ -12,7 +12,8 @@ body {
 
 }
 .logo {
-  font-size: 80px;
+  width: 60px;
+  height: auto;
   border-radius: 50%;
   display: block;
 }
@@ -194,8 +195,7 @@ body {
     }
 
     .logo {
-        font-size:60px;
-        max-width: 80%;
+        max-width: 60%;
         border-radius: 50%;
     }
 
