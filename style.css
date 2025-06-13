@@ -4,23 +4,28 @@ body {
 }
 
 .display {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-    background-color: #9ea167;
+    .header {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  gap: 20px; 
+  padding: 20px;
+}
+}
+.logo {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+}
+.salutation {
+  font-family: 'Great Vibes', cursive;
+  font-size: 60px;
+  color: #061b1d;
+  margin: 0;
 }
 
-.salutation {
-    font-family: 'Great Vibes', cursive;
-    font-size: 60px;
-    color: #061b1d;
-    margin: 0;
-    text-align: center;
-    justify-content: center;
-}
+
 
 .salutation1 {
     font-family: 'Great Vibes', cursive;
@@ -28,12 +33,6 @@ body {
     font-size: 50px;
     color: rgba(179, 46, 5, 0.815);
     margin-top: 20px;
-}
-
-.logo {
-    font-size:50%;
-    border-radius: 50%;
-    display: block;
 }
 
 .trait {
