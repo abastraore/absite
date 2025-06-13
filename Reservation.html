@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation d'hôtel</title>
+    <style>
+        .form-ligne {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            align-items:left;
+        }
+
+        .form-element {
+            flex: 1;
+            min-width: 100px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bolder;
+            color: #130e0fdc;
+        }
+
+        input {
+            width: 50%;
+            padding: 10px;
+            border: 1px solid #9e4444;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #972f49;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            display: block;
+            margin: 30px auto 0;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #79acce;
+        }
+
+        #message {
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+            color: rgb(3, 7, 17);
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="displayz">
+    <li><a href="index.html" class="effetz">Accueil</a></li>
+    <li><a href="Patrimoine.html" class="effetz">Patrimoine</a></li>
+    <li><a href="Reservation.html" class="effetz">Réservation d'hôtel</a></li>
+    <li><a href="Galerie.html" class="effetz">Galerie</a></li>
+  </ul>
+    <h1 class="salutation1">Veuillez remplir le formulaire ci-dessous pour la réservation d'hôtel</h1><br>
+
+    <form id="formulaire">
+        <div class="form-ligne">
+            <div class="form-element">
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+
+            <div class="form-element">
+                <label for="prenom">Prénom:</label>
+                <input type="text" id="prenom" name="prenom" required>
+            </div>
+        </div>
+
+        <div class="form-ligne">
+            <div class="form-element">
+                <label for="datenaissance">Date de Naissance:</label>
+                <input type="date" id="datenaissance" name="datenaissance" required>
+            </div>
+
+            <div class="form-element">
+                <label for="email">Adresse mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+        </div>
+
+        <div class="form-ligne">
+            <div class="form-element">
+                <label for="numero">Numéro de téléphone:</label>
+                <input type="tel" id="numero" name="numero" required>
+            </div>
+
+            <div class="form-element">
+                <label for="Nationalité">Nationalité:</label>
+                <input type="text" id="Nationalité" name="Nationalité" required>
+            </div>
+        </div>
+    <div class="form-ligne">
+        <div class="form-element">
+            <label for="nombredepersonne">Nombre de personne:</label>
+            <input type="number" id="nombredepersonne" name="nombredepersonne" min="1" max="10" required>
+        </div>
+        <div class="form-element">
+            <label for="typedechambre">Type de champs:</label>
+            <select name="typedechambre" id="typedechambre">Type de chambres:
+                <option value="simple" selected>Simple</option>
+                <option value="double" selected>Double</option>
+                <option value="Twin" title="pour deux personnes avec chacun son lit" selected>Twin</option>
+                <option value="Triple" selected>Triple</option>
+
+            </select>
+        </div>
+    </div>
+
+        <button type="submit" style="font-size: 25px;">Réserver</button>
+    </form>
+
+    <p id="message"></p>
+
+    <script>
+        document.getElementById("formulaire").addEventListener("submit", function (e) {
+            e.preventDefault(); // Empêche le rechargement de la page
+
+            var nom = document.getElementById("nom").value;
+            var prenom = document.getElementById("prenom").value;
+            var dateN = document.getElementById("datenaissance").value;
+            var mail = document.getElementById("email").value;
+            var num = document.getElementById("numero").value;
+            var nat = document.getElementById("Nationalité").value;
+
+            if (!nom || !prenom || !dateN || !mail || !num || !nat) {
+                
+                document.getElementById("message").innerText = "Veuillez remplir correctement tous les champs.";
+            } else {
+                document.getElementById("message").innerText = "Terminé.";
+                document.getElementById("message").style.fontSize="25px";
+            }
+        });
+    </script><br><br><br><br><br><br><br><br>
+
+    <footer class="footer">&copy; ILBOUDO_Yacouba & TRAORE_Abas</footer>
+</body>
+</html>
