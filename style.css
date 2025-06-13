@@ -5,6 +5,7 @@ body {
 
 .display {
   display:flex;
+  justify-content: center;
   gap: 10px;
   flex-wrap: wrap;
 }
@@ -14,7 +15,7 @@ body {
     font-size: 100px;
     color: rgba(6, 27, 29, 0.815);
     margin-top: 20px;
-    justify-content: center;
+    text-align: center;
 }
 
 .salutation1 {
@@ -29,9 +30,9 @@ body {
   width: 100%;
   max-width: 150px;
   height: auto;
+  border-radius: 50%; 
   display: block;
   margin: 0 auto;
-  border-radius: 8px;
 }
 
 .trait {
