@@ -184,7 +184,10 @@ body {
 @media (max-width: 768px) {
 
     .display {
+        
         flex-direction: column;
+       align-items: center;
+        text-align: center; 
     }
 
     .salutation {
@@ -198,7 +201,8 @@ body {
     }
 
     .logo {
-        max-width: 60%;
+        margin: 0 auto;
+       display: block;
         border-radius: 50%;
     }
 
