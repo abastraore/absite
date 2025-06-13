@@ -4,18 +4,20 @@ body {
 }
 
 .display {
-  display:flex;
-  justify-content:left;
-  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  background-color: #9ea167;
 }
 
 .salutation {
-    font-family: 'Great Vibes', cursive;
-    font-size: 80px;
-    color: rgba(6, 27, 29, 0.815);
-    text-align: center;
-    justify-items: left;
+   font-family: 'Great Vibes', cursive;
+  font-size: 60px;
+  color: #061b1d;
+  margin: 0;
 }
 
 .salutation1 {
@@ -27,11 +29,10 @@ body {
 }
 
 .logo {
-  width: 90%;
-  float: left;
+ width: 120px;
   height: auto;
-  border-radius: 50%; 
-  justify-items: left;
+  border-radius: 50%;
+  display: block;
 }
 
 .trait {
@@ -177,12 +178,12 @@ body {
 
   .display {
     flex-direction: column;
-    gap: 20px;
   }
 
  .salutation {
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
+    width: 100%;
   }
   .salutation1 {
       font-size: 35px;
