@@ -5,6 +5,9 @@ body {
     background-color: rgb(158, 161, 103);
 }
 
+@media (max-width: 768px) {
+  
+
 #display {
     display: flex;
     gap: 150px;
@@ -183,4 +186,5 @@ body {
     font-size: 20px; 
     color: rgb(105, 8, 117);
     text-align: center;
+}
 }
