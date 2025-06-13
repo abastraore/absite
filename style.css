@@ -14,6 +14,7 @@ body {
     font-size: 100px;
     color: rgba(6, 27, 29, 0.815);
     margin-top: 20px;
+    justify-content: center;
 }
 
 .salutation1 {
