@@ -12,14 +12,14 @@ body {
 
 }
 .logo {
-  width: 5px;
-  font-size: 20px;
+  width: 60px;
+  height: auto;
   border-radius: 50%;
   display: block;
 }
 .salutation {
   font-family: 'Great Vibes', cursive;
-  font-size: 80px;
+  font-size: 100px;
   color: #061b1d;
   margin: 0;
 }
